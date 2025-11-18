@@ -1,23 +1,18 @@
+import { alerta } from "../helpers/alertas.js";
+
 let btnLogin = document.getElementById("btnLogin");
 btnLogin.addEventListener("click", () =>{
     let correo = document.getElementById("email").value;
     let contrasena = document.getElementById("password").value;
     if (correo == "correo@correo.com" && contrasena=="12345"){
-        Swal.fire({
-            title:"Bienvenido",
-            text: "Sera redireccionado al Home",
-            icon:"success",
-            
-        })
-     window.location.href ="https://sweetalert2.github.io/"
+        alerta("bienvenido", "Será redireccionado", "Success")
+     setTimeout(() => {
+        window.location.href ="https://sweetalert2.github.io/"
+     }, 5000);
     }
        
     else{
-        Swal.fire({
-            title:"Error",
-            text: "Usuario y/o contraseña incorrecto",
-            icon:"error",
-        })
+       alerta("Error","Usuario y/o contraseña incorrecto","error")
     }
 });
 

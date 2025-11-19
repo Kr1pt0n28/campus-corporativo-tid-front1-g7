@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/modulo-1-autenticacion-y-registro/src/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Registro</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
         <h1>Crear cuenta</h1>
     </header>
 
-            <form id="form-registro" action="#" method="post">
+            <form id="form-registro">
                 
                 <div class="campo1">
                     
@@ -37,7 +38,7 @@
                 </div>
 
                 <div class="recordar">
-                    <input type="submit" value="Registro"></input>
+                    <input id="btnRegister" type="submit" value="Registro"></input>
                 </div>
             </form>
 
@@ -50,5 +51,6 @@
             Grupo Stella © 2025
         </p>
     </footer>
+<script type="module" src="/modulo-1-autenticacion-y-registro/src/controllers/controllerRegistro.js"></script>
 </body>
 </html>

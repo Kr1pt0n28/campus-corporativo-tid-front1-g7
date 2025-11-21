@@ -1,4 +1,6 @@
 import { alerta } from "../helpers/alertas.js";
+import { guardarUsuario } from "../helpers/local-storage.js";
+
 
 let btnRegister = document.getElementById("btnRegister");
 btnRegister.addEventListener("click", () =>{
@@ -8,9 +10,14 @@ btnRegister.addEventListener("click", () =>{
     let nombre = document.getElementById("nombre").value;
 
     if (contrasena === confirmar){
+        guardarUsuario({
+            correo,
+            contrasena,
+            nombre
+        });
        alerta("Registro exitoso","Se ha completado su registro","success")
         setTimeout(() => {
-        window.location.href ="https://sweetalert2.github.io/"
+        window.location.href ="../pages/login.html"
      }, 5000);
     }
     else{

@@ -10,35 +10,36 @@
 <body>
 
     <main>
-        <section class="titulo2" id="registro">
-             <header>
-        <h1>Recuperar Cuenta</h1>
-    </header>
+        <section class="titulo" id="registro">
+            <header>
+                <h1>Recuperar Cuenta</h1>
+            </header>
 
             <form id="form-registro">
-                
 
-                <section class="campos">
-                        <div class="campo1">
-                    
-                            <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
-                        </div>
-                </section>  
-                <div class="recordar">
-                    <input id="btnReestablecer" type="submit" value="Enviar"></input>
+                <section class="grupo-campos">
+                    <div class="campo">
+                        <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+                    </div>
+                </section>
+
+                <div class="boton">
+                    <input id="btnReestablecer" type="submit" value="Enviar">
                 </div>
             </form>
-            <div class="parrafo">
-             <a href="/modulo-1-autenticacion-y-registro/src/pages/login.html">Volver al Inicio de sesion</a>
-             </div>
+
+            <div class="link">
+                <a href="/modulo-1-autenticacion-y-registro/src/pages/login.html">Volver al Inicio de sesión</a>
+            </div>
         </section>
     </main>
 
-    <footer class="foter">
+    <footer class="pie">
         <p>
             Grupo Stella © 2025
         </p>
-    </footer>
-<script type="module" src="/modulo-1-autenticacion-y-registro/src/controllers/controllerReestablecimiento.js"></script>
+    </footer>
+
+    <script type="module" src="/modulo-1-autenticacion-y-registro/src/controllers/controllerReestablecimiento.js"></script>
 </body>
 </html>
